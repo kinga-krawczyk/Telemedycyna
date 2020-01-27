@@ -1,0 +1,54 @@
+﻿@model MvcLoginRegistration.Models.Logowanie
+
+@{
+    ViewData["Title"] = "Login";
+}
+<body style="background-color:ThreeDHighlight">
+    <connectionStrings>
+        <add name="DoQuizu" connectionString="Data Source=LAPTOP-8130R9Q0\SQLEXPRESS;Initial Catalog=DaltoQuiz;Integrated Security=True" providerName="System.Data.SqlClient" />
+    </connectionStrings>
+    <div>
+        <h2>Zaloguj się</h2>
+        <h4>Potrzebujemy paru informacji o tobie </h4>
+        <hr />
+    </div>
+
+    <div class="row">
+        @Html.ValidationMessage("blad")
+        <div class="col-md-4">
+
+            <form method="post" asp-action="Login">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Nazwa_uzytkownika" class="control-label"></label>
+                    <input asp-for="Nazwa_uzytkownika" class="form-control" />
+                    <span asp-validation-for="Nazwa_uzytkownika" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Wiek" class="control-label"></label>
+                    <input asp-for="Wiek" class="form-control" />
+                    <span asp-validation-for="Wiek" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Plec" class="control-label"> </label>
+
+                    @*<input asp-for="Plec" list="Płeć" class="form-control" />*@
+
+                    <span asp-validation-for="Plec" class="text-danger">
+                    </span>*
+                    <select asp-for="Plec" id="Select1">
+                        <option></option>
+                        <option>K</option>
+                        <option>M</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Rozwiąż Quiz" class="btn btn-default" />
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+
+

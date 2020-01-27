@@ -1,0 +1,47 @@
+﻿@using Microsoft.AspNetCore.Http
+
+    @{
+        ViewData["Title"] = "About";
+    }
+<body style="background-color:ThreeDHighlight">
+
+
+    <div class="jumbotron" style="background-color:pink">
+        <h1>Dalto Quiz</h1>
+        <distributed-cache></distributed-cache>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation" style=" background-color:CaptionText; color:azure" >
+
+            <div class="navbar-header">
+                <span class="sr-only">toggle navigation</span>
+
+            </div>
+            <div class="collpase navbar-collapse" id="navbar-collapse-main" >
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li><a asp-area="" asp-controller="Logowanie" asp-action="Login">Rozwiąż Quiz</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <p>
+                Niepoprawna odpowiedź na którekolwiek z pytań nie oznacza, że osoba rozwiązująca quiz ma
+                daltonizm, w tym przypadku zalecane jest badanie u lekarza okulisty pod kątem daltonizmu.
+            </p>
+            </div>
+            <div class="col-md-4">
+                <p>
+                    Rozwiązanie quizu ma służyć przede wszystkim dobrej zabawie.
+                </p>
+            </div>
+        </div>
+
+</body>
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+﻿@*@model MvcLoginRegistration.Models.Logowanie*@
+@using System.Data
+@using System.Data.SqlClient
+@using Microsoft.SqlServer;
+
+@{
+    ViewData["Title"] = "Index";
+
+}
+
+<div>
+    <h2>Wyniki</h2>
+</div>
+<connectionStrings>
+    <add name="DoQuizu" connectionString="Data Source=LAPTOP-8130R9Q0\SQLEXPRESS;Initial Catalog=DaltoQuiz;Integrated Security=True" providerName="System.Data.SqlClient" />
+</connectionStrings>
+<head>
+
+    <body>
+        <table class="table" method ="get" asp-action="Wyswietl">
+
+
+            <tr>
+                <th>ID</th>
+                <th>Plec</th>
+                <th>Wynik</th>
+                <th>Calosc</th>
+            </tr>
+            @* @foreach (var item in Model)
+        {
+            <tr>
+
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        }          *@
+            @* <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Plec)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Wynik)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Calosc)
+                </th>
+            </tr>
+        </thead>*@
+        </table>
+    </body>
+</head>
+
+
+
+<tr>
+    @*<td>
+            @Html.DisplayFor(modelItem => item.ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameOf)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>*@
+    @*<td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>*@
+</tr>
+@*}*@

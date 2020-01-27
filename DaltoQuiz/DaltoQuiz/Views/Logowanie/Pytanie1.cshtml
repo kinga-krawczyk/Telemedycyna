@@ -1,0 +1,37 @@
+﻿@model MvcLoginRegistration.Models.Pytanie
+
+
+<html>
+<body style="background-color:ThreeDHighlight">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Pytanie2</title>
+    </head>
+   
+        <div>
+            <h1>Pytanie 2</h1>
+            <ol type="1"></ol>
+
+            <h4>
+                Co widzisz na obrazku?
+            </h4>
+            <img src="~/Obrazki/2.png" alt="" style="width: 600px; height: 400px" />
+
+        </div>
+
+        <form method="get" asp-action="SprawdzOdpowiedz1">
+            <input type="hidden" id="pytanieId" value="2" />
+            <input id="odpowiedz" type="submit" value="@Model.Odpowiedzi[0]" style="width:300px; height:50px" />
+            <input id="odpowiedz" type="submit" value="@Model.Odpowiedzi[1]" style="width:300px; height:50px" />
+        </form>
+
+        <form method="get" asp-action="SprawdzOdpowiedz1">
+            <input type="hidden" id="pytanieId" value="2" />
+            <input id="odpowiedz" type="submit" value="@Model.Odpowiedzi[2]" style="width:300px; height:50px" />
+            <input id="odpowiedz" type="submit" value="@Model.Odpowiedzi[3]" style="width:300px; height:50px" />
+        </form>
+
+
+    
+</body>
+</html>

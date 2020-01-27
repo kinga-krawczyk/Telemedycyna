@@ -1,0 +1,73 @@
+﻿@using Microsoft.AspNetCore.Http
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+
+    <div class="jumbotron" style="background-color:pink">
+        <h1>Dalto-Quiz</h1>
+
+
+    </div>
+    <body style="background-color:ThreeDHighlight">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container-fluid"  
+                style="background-color:CaptionText; color:azure">
+
+                <div class="collpase navbar-collapse" id="navbar-collapse-main">
+                    <ul class="nav navbar-nav navbar-right">
+
+                        @*<li><a asp-area="" asp-controller="Home"  asp-action="Rozwiaz_quiz">Rozwiąż quiz</a></li>
+                <li><a asp-area="" asp-controller="Home" asp-action="Wyniki">Pokaż ogólne wyniki</a></li>*@
+
+                        <li>@Html.ActionLink("Rozwiąż Quiz", "Login", "Logowanie")</li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Co to jest daltonizm? </h4>
+                <p>
+                    Daltonizm to wada wzroku gdzie oko nie jest zdolne
+                    do rozróżniania barw - szczególnie czerwonej i zielonej.
+                    Daltonizm jets dziedziczny, najczęściej jest spotykany u męższyzn.
+                </p>
+                <p>
+                    Nazwa choroby pochodzi od nazwiska angielskiego fizyka Johna Daltona,
+                    zauważył on u siebie, że widzi kolory inaczej niż inni ludzie (czerwone postrzegał jako zielone).
+                </p>
+                <p>Po wielu latach badań okazało się, że daltonizm jest spowodowany złą budową siatkówki.</p>
+                <p> Do wykrywania daltonizmu służą m.in. tablice Ischihary</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Na czym polega test Ischihary? </h4>
+
+                <p>
+                    Test Ischihary składa się z 38 tablic pseudoizochromatycznych.
+                    Przedstawiają one liczby składające się z małych kółek o specjalnie dobranych barwach,
+                    które tworzą liczby albo szlaczki, osoba chora na daltonizm widzi inną liczbę niż osoba zdrowa.
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h4>Alternatywy testu Ischihary</h4>
+                <p>
+                    Test Masturbary (swoisty test na daltonizm). Od testu Ischihary różni się tylko tym, że zamiast cyfer
+                    na tablicach przedstawione są obrazki (m.in. kółko, słoń, gwiazda). Istnieje dziesięć tablic Masturbary.
+                </p>
+
+            </div>
+
+        </div>
+    </body>
+
+
+
+
+
+

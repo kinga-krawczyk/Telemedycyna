@@ -1,0 +1,35 @@
+﻿@model MvcLoginRegistration.Models.Quiz
+
+
+@*<!DOCTYPE html>*@
+
+<<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Pytania</title>
+</head>
+<body>
+    <div>
+        <h1>Pytanie 1</h1>
+        <ol type="1"></ol>
+
+        <h4>
+            Co widzisz na obrazku?
+        </h4>
+        <img src="~/Obrazki/10.png" alt="" style="width: 400px; height: 400px" />
+
+    </div>
+
+    <form method="post" asp-action="Pytanie2">
+        <input id="Button1" type="submit" value="16" style="width:300px; height:50px" />
+        <input id="Button2" type="submit" value="45" style="width:300px; height:50px" />
+    </form>
+
+    <form method="post" asp-action="Pytanie2">
+        <input id="Button3" type="submit" value="Nic" style="width:300px; height:50px" />
+        <input id="Button4" type="submit" value="15" style="width:300px; height:50px" />
+    </form>
+
+</body>
+
+</html>
